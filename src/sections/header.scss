@@ -1,16 +1,42 @@
+$darkgrey: #222222;
+$darkblue: #26344a;
+$greygreen: #6c797e;
+$lightgreen: #b1bdb2;
+$lightgrey: #f4f3ee;
+$white: #ffffff;
+$black: #222222;
+
 #header {
-  background-color: pink;
-  nav {
-    background-color: rgb(170, 37, 99);
-  }
+  background-color: rgba(0, 0, 0, 0);
 
-  li {
-    width: fit-content;
-    color: rgb(190, 157, 157);
-  }
-
-  ul {
+  div {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4em;
+
+    nav {
+      background-color: rgba(170, 37, 99, 0);
+      width: 80%;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      font-size: 2.4em;
+
+      a {
+        font-size: 2.4em;
+        font-weight: 700;
+        color: white;
+      }
+      li {
+        :hover {
+          color: $darkgrey;
+          transition: color 0.3s ease;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
